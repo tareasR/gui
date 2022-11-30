@@ -64,7 +64,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.post("https://despliegue-production-10c5.up.railway.app", {
+            axios.post("https://despliegue-production-d251.up.railway.app", {
 
                 nombre: nombre_,
                 password: password_
@@ -83,7 +83,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.get("https://despliegue-production-10c5.up.railway.app/usuarios")
+            axios.get("https://despliegue-production-d251.up.railway.app/usuarios")
                 .then(function (response) {
                     console.log(response);
                     tabla(response.data)
@@ -98,7 +98,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.post("https://despliegue-production-10c5.up.railway.app/existe", {
+            axios.post("https://despliegue-production-d251.up.railway.app/existe", {
                 id: id_,
                 nombre: nombre_,
                 password: password_
