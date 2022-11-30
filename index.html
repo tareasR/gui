@@ -64,7 +64,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.post("http://localhost:4567", {
+            axios.post("http://despliegue-production-10c5.up.railway.app", {
 
                 nombre: nombre_,
                 password: password_
@@ -83,7 +83,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.get("http://localhost:4567/usuarios")
+            axios.get("http://despliegue-production-10c5.up.railway.app/usuarios")
                 .then(function (response) {
                     console.log(response);
                     tabla(response.data)
@@ -98,7 +98,7 @@
             let nombre_ = document.getElementById("id2").value
             let password_ = document.getElementById("id3").value
             console.log(id_ + " " + nombre_ + " " + password_)
-            axios.post("http://localhost:4567/existe", {
+            axios.post("http://despliegue-production-10c5.up.railway.app/existe", {
                 id: id_,
                 nombre: nombre_,
                 password: password_
